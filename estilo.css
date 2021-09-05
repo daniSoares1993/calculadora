@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #ccc;
+}
+
+@keyframes neon {
+	from {
+		box-shadow: 1px 1px 8px 8px #9B30FF; 
+	}
+	to{
+		box-shadow: 1px 1px 8px 8px magenta;
+	}
+}
+
+input{
+	margin-top: 20px;
+	margin-left: 45px;
+	border-radius: 5px;
+	border: none;
+	width: 280px;
+	height: 40px;
+	font-size: 2em;
+}
+
+button{
+	background-color: #1C1C1C;
+	color: white;
+	border-radius: 3px;
+	box-shadow: 1px 1px 8px 2px black;
+	border: none;
+	width: 80px;
+	height: 68px;
+	margin: 2px 0;
+	font-size: 1.3em;
+}
+
+button:hover{
+	
+	animation-name: neon;
+	animation-duration: 0.7s;
+	animation-timing-function: linear;
+	animation-iteration-count:inherit;
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+
+#calculadora{
+	margin:60px auto;
+	background-color:	#4F4F4F;
+	border-radius: 15px;
+	box-shadow: 1px 1px 10px 10px  #1C1C1C ;
+	width: 400px;
+	height: 500px;
+}
+
+#botoes{
+	margin: 15px auto;
+	width: 350px;
+	height: 380px;
+}
+
+.C{
+
+	width: 165px;
+}
+
+.igual{
+	border-collapse: collapse;
+	height: 140px;
+	float: right;
+	margin-right: 18px;
+
+}
+
+.clear{
+	clear:both;
+}
